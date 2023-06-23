@@ -24,7 +24,7 @@ public class HtmlController {
         return "hello";
     }
 
-    @GetMapping("/html/dynamic")
+    @GetMapping("/html/dynamic")        //dynamic
     public String htmlDynamic(Model model){
         visitCount++;
         model.addAttribute("visit", visitCount);
