@@ -2,7 +2,7 @@ package com.example.controlerprepare.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
+//origin
 @Controller
 @RequestMapping("/api")
 public class HelloController {
