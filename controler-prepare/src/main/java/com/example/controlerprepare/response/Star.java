@@ -13,5 +13,6 @@ public class Star {
         this.age = age;
     }
 
+
     public Star() {}
 }
