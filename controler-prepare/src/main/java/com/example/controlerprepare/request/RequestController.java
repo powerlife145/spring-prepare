@@ -31,9 +31,9 @@ public class RequestController {
 
     // [Request sample]
 // POST http://localhost:8080/hello/request/form/param
-// Header
+// Header~
 //  Content type: application/x-www-form-urlencoded
-// Body
+// Body~
 //  name=Robbie&age=95
     @PostMapping("/form/param")
     @ResponseBody
