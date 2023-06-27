@@ -9,6 +9,7 @@ import java.time.LocalDate;
 @Getter
 public class BlogResponseDto {
     private Long id;
+    private String title;
     private String username;
     private String contents;
     private LocalDate date;
@@ -17,6 +18,7 @@ public class BlogResponseDto {
 
     public BlogResponseDto(Blog blog) {
         this.id = blog.getId();
+        this.title = blog.getTitle();
         this.username = blog.getUsername();
         this.contents = blog.getContents();
         this.password = blog.getPassword();

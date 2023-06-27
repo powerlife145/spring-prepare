@@ -14,14 +14,16 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class Blog {
     private Long id;
+    private String title;
     private String username;
     private String contents;
     private String password;
 
     private LocalDate date;
-
+    //entity
     public Blog(BlogRequestDto requestDto) {
         this.username = requestDto.getUsername();
+        this.title = requestDto.getTitle();
         this.contents = requestDto.getContents();
         this.date = requestDto.getDate();
         this.password=requestDto.getPassword();
@@ -33,6 +35,7 @@ public class Blog {
         this.contents = requestDto.getContents();
         this.date = requestDto.getDate();
         this.password=requestDto.getPassword();
+        this.title=requestDto.getTitle();
 
     }
 
